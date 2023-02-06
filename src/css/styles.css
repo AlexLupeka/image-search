@@ -1,0 +1,128 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.search {
+  background-color: #7eb35c;
+  height: 15%;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 300;
+  border: none;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  float: left;
+  width: 300px;
+  outline: none;
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.search-button {
+  margin-left: 5px;
+  float: left;
+  width: 100px;
+  padding: 10px;
+  background: #617eb8;
+  color: #000;
+  font-size: 18px;
+  font-weight: 300;
+  border: none;
+  border-radius: 10px;
+  border-left: none;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background: #cc9d02ce;
+  color: #ffffff;
+}
+
+.search-form::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 25px;
+}
+
+.photo-card {
+  flex-flow: column;
+  flex-wrap: wrap;
+  margin-right: 20px;
+}
+
+.photo {
+  display: block;
+  width: 350px;
+  height: 250px;
+}
+.photo-link {
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.photo-link:hover {
+  transform: scale(1.05);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  width: 350px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #7eb35c;
+  border-left: 1px solid #7eb35c;
+  border-right: 1px solid #7eb35c;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0.4, 0.4);
+}
+.info-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.info-item-data {
+  padding-top: 5px;
+}
+
+.load-more {
+  display: flex;
+  margin: 0px auto 20px;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 18px;
+  color: #fff;
+  background-color: #7eb35c;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.load-more:hover {
+  background: #cc9d02ce;
+  color: #000000;
+}
